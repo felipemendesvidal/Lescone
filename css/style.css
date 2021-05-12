@@ -1,0 +1,25 @@
+/*
+grid andre
+.container{
+    max-width:1200px;
+    margin: 0 auto;
+    &::after, &::before{
+        content:'';
+        display:table;
+        clear:both;
+    }
+}
+.grid-3{
+    width:calc(25%-20px);
+    margin-left:10px;
+    float:left;
+}
+
+
+
+
+
+
+
+
+*/
