@@ -35,13 +35,21 @@ $s-device:480px;
         @media screen and (max-width: $m-device - 1) {@content;} 
     }
 }
+// função do grid
+@function grid ($col, $offset:false){
+    $width: $col / $cols * 100 + "%";
+    $result: calc(#{$width} - #{$gutter});
+    @if $offset == offset{
 
-p{color:blue;
-    @include d(m){
-        color:pink;
-    }
-    @include d(s){
-        color: red;;
-    }
+        $gutter: $gutter /2;
+        $result: calc(#{$width} + #{$gutter});
 
+    }
+    @return $result;
+
+}//fim da função de grid
+div{
+    width: grid(6);
 }
+// parei em 6,19
+
