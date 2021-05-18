@@ -58,8 +58,23 @@ $s-device:480px;
     @include d(s){width: 100%;float: none;margin-right: 0px;margin-left: 0px;
     }
 }
+// seleciona todos os elementos com class, é o mesmo que .grid-1, a diferença é que ele faz isso automatico, substitui o colocar a virgula para selecionar varias classes 
 [class^="grid-"]{
     @include grid-structure;
+}
+
+// gera as classes de offset
+@for $i from 1 through $cols{
+    .offset-#{$i}{margin-left: grid($i, offset);@extend %offset; }
+}
+@include d(s){
+    %offset{
+        margin-left: 0px;
+    }
+}
+// clearfix
+@mixin clearfix {
+    &::after, &::before{content: ''; display: table; clear: both;}
 }
 
 // parei em 6,19
