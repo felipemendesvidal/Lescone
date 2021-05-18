@@ -77,5 +77,14 @@ $s-device:480px;
     &::after, &::before{content: ''; display: table; clear: both;}
 }
 
+@mixin container {
+    max-width: $l-device;margin: 0px auto;position: relative; 
+    @include d(m){max-width: $m-device;}
+    @include d(s){max-width: $s-device; margin-left:10px;margin-right: 10px;}
+    @include  clearfix;
+}
+.container{
+    @include container;
+}
 // parei em 6,19
 
