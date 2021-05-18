@@ -66,3 +66,19 @@ grid andre
 .grid-12 {
   width: calc(100% - 20px);
 }
+
+[class^="grid-"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 759px) {
+  [class^="grid-"] {
+    width: 100%;
+    float: none;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
