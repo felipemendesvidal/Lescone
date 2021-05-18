@@ -48,8 +48,9 @@ $s-device:480px;
     @return $result;
 
 }//fim da função de grid
-div{
-    width: grid(6);
+// gera as classes de grid
+@for $i from 1 through $cols{
+    .grid-#{$i}{width: grid($i);}
 }
 // parei em 6,19
 
