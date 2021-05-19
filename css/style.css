@@ -152,8 +152,8 @@ grid andre
 @media screen and (max-width: 759px) {
   .container {
     max-width: 480px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -165,6 +165,25 @@ grid andre
 
 div {
   background-color: rgba(0, 0, 0, 0.267);
-  min-height: 50px!important;
-  margin-bottom: 20px;
+  min-height: 50px !important;
+  margin-bottom: 10px;
+}
+
+.row {
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+@media screen and (max-width: 759px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.row::after, .row::before {
+  content: '';
+  display: table;
+  clear: both;
 }
