@@ -86,5 +86,9 @@ $s-device:480px;
 .container{
     @include container;
 }
+div{
+    background-color: rgba(0, 0, 0, 0.267);
+    min-height: 200px;
+}
 // parei em 6,19
 
