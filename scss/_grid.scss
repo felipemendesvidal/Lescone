@@ -87,8 +87,7 @@ $s-device:480px;
     @include container;
 }
 
-div{ background-color: rgba(0, 0, 0, 0.267); min-height: 50px !important; margin-bottom: 10px;
-}
+
 // parei em 6,19
 
 @mixin row{position: relative; margin-left: -$gutter/2;margin-right: -$gutter/2; 
