@@ -171,8 +171,8 @@ grid andre
 
 @media screen and (max-width: 759px) {
   .row {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
