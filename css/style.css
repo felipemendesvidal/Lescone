@@ -241,3 +241,36 @@ body {
   border: 10px solid #cbc6b9;
   color: #2a2426;
 }
+
+@media screen and (max-width: 759px) {
+  body {
+    border: none;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.titulo {
+  text-transform: uppercase;
+  font-family: "PT mono", monospace;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+}
+
+@media screen and (max-width: 759px) {
+  .titulo {
+    margin-bottom: 40px;
+  }
+}
+
+.titulo::after {
+  content: '';
+  display: block;
+  background-color: #2a2426;
+  width: 70%;
+  float: right;
+  height: 2px;
+}
