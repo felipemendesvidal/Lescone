@@ -4,13 +4,19 @@ body{background-color: $cor-fundo; border: 10px solid $bege-medio; color:$cinza;
 }
 }
 img{display: block; max-width: 100%;}
+P{
+    @include tipo-1 (18);
+}
 .titulo{
     text-transform: uppercase;
     @include tipo-1(18);
     @include d(s){
         margin-bottom: 40px;
     }
-    &::after{content: '';display: block;background-color: $cinza; width: 70%; float: right; height: 2px;
+    &::after{content: '';display: block;background-color: $cinza; width: 75%; float: right; height: 2px; margin-top: 14px;
+        @include d(m){
+            width: 60%;
+        }
     }
 
 }
