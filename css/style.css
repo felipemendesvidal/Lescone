@@ -430,3 +430,32 @@ P {
     margin-top: 0px;
   }
 }
+
+.contato {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 759px) {
+  .contato {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.contato form label {
+  font-family: "PT mono", monospace;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  display: block;
+}
+
+.contato form input[type="text"], .contato form textarea {
+  font-family: "PT mono", monospace;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  color: #2a2426;
+  width: 100%;
+  padding: 0 5px;
+  border: 2px solid #988c77;
+}
