@@ -8,7 +8,7 @@
     a img{ float: right;
         @include d(s){
             float: none;
-            margin: 22px auto;
+            margin: 20px auto;
         }
     }
 }
